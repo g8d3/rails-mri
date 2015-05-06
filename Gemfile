@@ -46,3 +46,4 @@ end
 
 gem 'slim-rails'
 gem 'quiet_assets'
+gem 'letter_opener', group: :development

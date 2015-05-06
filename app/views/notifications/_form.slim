@@ -3,17 +3,17 @@ header
     | Let’s work together
   p
     | Send us a message
-  form[method="post" action="#"]
+  = form_tag contact_us_path do
     .row
       .6u
-        input.text[type="text" name="name" placeholder="Name"]
+        = text_field_tag :name, nil, placeholder: 'Name'
       .6u
-        input.text[type="text" name="email" placeholder="Email"]
+        = email_field_tag :email, nil, placeholder: 'Email'
     .row
       .12u
-        textarea[name="message" placeholder="Message"]
+        = text_area_tag :message, nil, placeholder: 'Message'
     .row
       .12u
         ul.actions
           li
-            input[type="submit" value="Send Message"]
+            = submit_tag "Send Message"
