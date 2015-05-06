@@ -25,25 +25,7 @@ html
         a.button.style2.scrolly-middle[href="#contact"]
           | Contact us
     article.container.box.style3#contact
-      header
-        h2
-          | Let’s work together
-        p
-          | Send us a message
-      form[method="post" action="#"]
-        .row
-          .6u
-            input.text[type="text" name="name" placeholder="Name"]
-          .6u
-            input.text[type="text" name="email" placeholder="Email"]
-        .row
-          .12u
-            textarea[name="message" placeholder="Message"]
-        .row
-          .12u
-            ul.actions
-              li
-                input[type="submit" value="Send Message"]
+      = render 'notifications/form'
     section#footer
       .copyright
         ul.menu
