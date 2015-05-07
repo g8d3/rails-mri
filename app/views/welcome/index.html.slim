@@ -14,7 +14,11 @@ html
     noscript
       link[rel="stylesheet" href="css/skel.css"]
       link[rel="stylesheet" href="css/style.css"]
+    = stylesheet_link_tag 'application'
   body
+    - if flash[:notice].present?
+      #notice
+        = flash[:notice]
     section#header
       header
         h1
