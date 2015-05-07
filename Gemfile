@@ -47,3 +47,5 @@ end
 gem 'slim-rails'
 gem 'quiet_assets'
 gem 'letter_opener', group: :development
+gem 'capistrano',  '~> 3.1'
+gem 'capistrano-rails', '~> 1.1'
